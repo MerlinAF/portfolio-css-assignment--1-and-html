@@ -1,0 +1,152 @@
+/* Google Font */
+body {
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: top;
+    padding: 40px 10%;
+    background-color: #f0d9eb;
+    gap: 30px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(127, 160, 221, 0.2);
+  }
+  
+  .about-text h2 {
+    margin: 0;
+    font-size: 28px;
+    
+  }
+  
+  .about-text p {
+    margin-top: 10px;
+    
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 40px 10%;
+    background: #aed2e7;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .project img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 40px 10%;
+    background-color: #f1f1f1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #333;
+    outline: none;
+  }
+  
+  button {
+    background-color: #0c8107;
+    color: rgb(245, 245, 248);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
